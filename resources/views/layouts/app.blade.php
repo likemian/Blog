@@ -7,7 +7,9 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
+    <!-- title name and icon setting -->
     <title>Blog</title>
+    <link rel="icon" href="images/title.ico" type="image/x-icon" />
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
