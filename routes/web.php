@@ -16,7 +16,7 @@ use App\Http\Controllers\BlogController;
 */
 
 // Route::view('/', 'welcome');
-Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::view('/', 'top');
 
 Auth::routes();
 
