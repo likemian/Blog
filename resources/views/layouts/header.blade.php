@@ -20,9 +20,8 @@
     <link href="https://unpkg.com/ionicons@4.2.2/dist/css/ionicons.min.css" rel="stylesheet">
 
     <!-- Styles -->
-    @yield('css')
+    <link href="{{ asset('css/top.css') }}" rel="stylesheet">
 </head>
-<body class="body">
+<body>
     @yield('content')
 </body>
-</html>
