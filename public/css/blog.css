@@ -1,0 +1,41 @@
+html {
+    height: 100%;
+}
+.cover-image-wrapper {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.cover-image {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-image: url(../images/sea.jpg);
+    background-size: 100% 100%;
+    background-position: 50% 50%;
+    background-attachment: scroll;
+    transform-origin: 50% 80%;
+    -webkit-animation: coverZoom linear 60s;
+    -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes coverZoom {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.24);
+    }
+}
