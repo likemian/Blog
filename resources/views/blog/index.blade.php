@@ -32,9 +32,7 @@
     </form>
 
     <nav id="pl__container">
-      <a class="技术 pl__all" href="/2020-04-14-database-backup-docker-image.html"><span class="pl__circle"></span><span class="pl__title">Database Backup/Restore Docker Image</span></a>
-    
-      <a class="生活 pl__all" href="/2020-04-12-newzealand-covid19-lockdown-week3.html"><span class="pl__circle"></span><span class="pl__title">新西兰居家隔离第三周</span></a>
+      <a class="技术 pl__all" href="/blog"><span class="pl__circle"></span><span class="pl__title">Mysql new version connection question</span></a>
     </nav>
   </div> <!-- end #posts-list -->
 </aside> <!-- end #sidebar -->
