@@ -13,6 +13,11 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/jquery-1.7.1.min.js') }}" defer></script>
+    <script src="{{ asset('js/jquery.pjax.js') }}" defer></script>
+    <script src="{{ asset('js/nprogress.js') }}" defer></script>
+    <script src="{{ asset('js/searchbox.js') }}" defer></script>
+    <script src="{{ asset('js/script.js') }}" defer></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">

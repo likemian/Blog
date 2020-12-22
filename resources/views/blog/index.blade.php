@@ -9,7 +9,6 @@
 @endsection
 
 @section('content')
-<button id="js-fullscreen"><span id="icon-arrow" class="fontello"></span></button>
 <button id="scroll-top"><span id="icon-arrow-up" class="fontello"></span></button>
 <aside id="sidebar">
   <nav id="tags">
@@ -17,11 +16,8 @@
 
     <ul id="tags__ul">
       <li id="pl__all" class="tags__li tags-btn active">所有文章</li>
-      
         <li id="生活" class="tags__li tags-btn">生活</li>
-      
         <li id="技术" class="tags__li tags-btn">技术</li>
-      
     </ul>
   </nav> <!-- end #tags -->
 
@@ -42,15 +38,7 @@
     <article id="post__content">
 <h1 id="post__title" data-identifier="20190804">Proxy Protocol Demo of Nginx Ingress Controller in OpenStack Magnum Cluster</h1>
 <div id="post__date">2019-08-04</div>
-<declare id="declare" class="declare">
-  <hr> 本博客所有文章采用的授权方式为
-    <a href="http://creativecommons.org/licenses/by-nc-nd/3.0/deed.zh" target="_blank">
-      <b>自由转载-非商用-非衍生-保持署名</b>
-    </a>
-  ，转载请务必注明出处，谢谢。<br><br>
-  声明：<br>本博客欢迎转发，但请保留原作者信息!<br>新浪微博：<a href="/" target="_blank">@Lingxian_kong</a>;<br>博客地址：<a href="/" target="_blank">孔令贤的博客</a>;<br>微信公众号：飞翔的尘埃;<br>内容系本人学习、研究和总结，如有雷同，实属荣幸！
-  <hr>
-</declare>
+@include('blog.explain')
 <div class="post__content">
         <h3 id="问题描述">问题描述：</h3>
 
@@ -93,12 +81,5 @@
       </div>
 </article>
 <!-- end #post__content -->
-
-<div id="post__toc-trigger">
-  <div id="post__toc">
-    <span id="post__toc-title">章节列表</span>
-    <ul id="post__toc-ul"><li class="post__toc-li post__toc-h1"><a href="#post__title" class="js-anchor-link">Proxy Protocol Demo of Nginx Ingress Controller in OpenStack Magnum Cluster</a></li><li class="post__toc-li post__toc-h2"><a href="#ejsah" class="js-anchor-link">Why Proxy Protocol</a></li><li class="post__toc-li post__toc-h2"><a href="#erlrq" class="js-anchor-link">Why OpenStack Magnum</a></li><li class="post__toc-li post__toc-h2"><a href="#xtrkr" class="js-anchor-link">Demo</a></li></ul>
-  </div>
-</div>
-</div>
+@include('layouts.footer')
 @endsection
