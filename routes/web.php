@@ -22,3 +22,5 @@ Route::view('/blog', 'blog/index');
 Auth::routes();
 
 Route::get('home', [HomeController::class, 'index'])->name('home');
+
+Route::view('/system', 'system/index');
