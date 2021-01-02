@@ -5,12 +5,16 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">welcome here</div>
+                <div class="card-header">{{ __('Dashboard') }}</div>
 
                 <div class="card-body">
-                    读万卷书，行万里路
+                    @if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
 
-                    <a href="{{ route('blog.index') }}" class="btn btn-lg btn-block btn-primary">点击这里查看我的博客</a>
+                    {{ __('You are logged in!') }}
                 </div>
             </div>
         </div>
