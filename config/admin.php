@@ -411,7 +411,7 @@ return [
                     'emoji' => true,
                     'imageUpload' => true,
                     'imageFormats' => ["jpg", "jpeg", "gif", "png", "bmp", "webp"],
-                    'imageUploadURL' => '/admin/blog-upload-files?type=1',
+                    'imageUploadURL' => '/admin/upload',
 
                 ]
         ],
