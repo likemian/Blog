@@ -395,6 +395,45 @@ return [
     |
     */
     'extensions' => [
+        'editormd' => [
+            // Set to false if you want to disable this extension
+            'enable' => true,
+            // Set to true if you want to take advantage the screen length for your editormd instance.
+            'wideMode' => false,
+            // Set to true when the instance included in larave-admin tab component.
+            'dynamicMode' => false,
+            // Editor.js configuration (Refer to http://pandao.github.io/editor.md/)
+            'config' =>
+                [
+                    'path' => '/vendor/laravel-admin-ext/editormd/editormd-1.5.0/lib/',
+                    'width' => '100%',
+                    'height' => 600,
+                    'emoji' => true,
+                    'imageUpload' => true,
+                    'imageFormats' => ["jpg", "jpeg", "gif", "png", "bmp", "webp"],
+                    'imageUploadURL' => '/admin/blog-upload-files?type=1',
 
+                ]
+        ],
+        'simditor' => [
+            // Set to false if you want to disable this extension
+            'enable' => true,
+            // Editor configuration
+            'config' => [
+                'upload' => [
+                    'url' => '/admin/api/upload', # example api route: admin/api/upload
+                    'fileKey' => 'upload_file',
+                    'connectionCount' => 3,
+                    'leaveConfirm' => '正在上传中，确定要离开此页面吗?'
+                ],
+                'tabIndent' => true,
+                'toolbar' => ['title', 'bold', 'italic', 'underline', 'strikethrough', 'fontScale', 'color', '|', 'ol', 'ul', 'blockquote', 'code', 'table', '|', 'link', 'image', 'hr', '|', 'indent', 'outdent', 'alignment'],
+                'toolbarFloat' => true,
+                'toolbarFloatOffset' => 0,
+                'toolbarHidden' => false,
+                'pasteImage' => true,
+                'cleanPaste' => false,
+            ]
+        ]
     ],
 ];

@@ -64,7 +64,7 @@ class BlogController extends AdminController
         $form = new Form(new Blog());
 
         $form->text('title', __('标题'));
-        $form->textarea('content', __('文章内容'));
+        $form->editormd('content', __('文章内容'));
 
         return $form;
     }

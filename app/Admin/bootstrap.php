@@ -19,3 +19,8 @@
  */
 
 Encore\Admin\Form::forget(['map', 'editor']);
+
+/*
+ * 大文件上传引入
+ */
+Encore\Admin\Form::extend('largefile', \Encore\LargeFileUpload\LargeFileField::class);
