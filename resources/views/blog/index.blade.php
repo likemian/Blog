@@ -39,7 +39,7 @@
   <div id="pjax">
     <article id="post__content">
     <h1 id="post__title" data-identifier="{{ $blog->created_at }}">{{ $blog->title }}</h1>
-    <div id="post__date">{{ $blog->created_at }}</div>
+    <div id="post__date">{{ $blog->created_at->format('Y-m-d') }}</div>
       @include('blog.explain')
       <div class="post__content">
       {!! $blog->content !!}

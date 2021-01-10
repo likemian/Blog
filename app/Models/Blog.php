@@ -13,6 +13,8 @@ class Blog extends Model
 
     protected $table = 'blogs';
 
+    protected $dateFormat = 'Y-m-d';
+
     /**
      * change content format
      * 
