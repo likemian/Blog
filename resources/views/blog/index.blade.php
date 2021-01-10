@@ -42,7 +42,7 @@
     <div id="post__date">{{ $blog->created_at }}</div>
       @include('blog.explain')
       <div class="post__content">
-      {{ $blog->content }}
+      {!! $blog->content !!}
       </div>
 </article>
 <!-- end #post__content -->
