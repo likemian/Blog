@@ -29,7 +29,7 @@
 
     <nav id="pl__container">
       @foreach($titles as $title)
-      <a class="技术 pl__all" href="/blog?{{ $title->id }}"><span class="pl__circle"></span><span class="pl__title">{{ $title->title }}</span></a>
+      <a class="技术 pl__all" href="/blog/{{ $title->id }}"><span class="pl__circle"></span><span class="pl__title">{{ $title->title }}</span></a>
       @endforeach
     </nav>
   </div> <!-- end #posts-list -->

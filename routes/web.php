@@ -1,7 +1,5 @@
 <?php
 
-use App\Http\Controllers\Admin\SystemController;
-use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\BlogController;
 
@@ -17,4 +15,4 @@ use App\Http\Controllers\BlogController;
 */
 
 Route::view('/', 'top');
-Route::get('blog', [BlogController::class, 'index'])->name('blog');
+Route::get('blog/{id?}', [BlogController::class, 'index'])->name('blog.index');
